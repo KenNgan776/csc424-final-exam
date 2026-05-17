@@ -1,11 +1,11 @@
 services:
   frontend:
-    build: ./frontend
+    image: ken043/csc424-frontend:latest
     networks:
       - app-network
 
   backend:
-    build: ./backend
+    image: ken043/csc424-backend:latest
     networks:
       - app-network
     healthcheck:
